@@ -79,21 +79,21 @@ This project is a simple chat application demonstrating socket programming using
 ## Example
 
 ### Server Output
-Server program
-Server has started listening on port : 12345
-client connected
-Message from client : Ankit: Hello, World!
-Message from client : Amit: Hi, Ankit!
+Server program <br/>
+Server has started listening on port : 12345 <br/>
+client connected <br/>
+Message from client : Ankit: Hello, World! <br/>
+Message from client : Amit: Hi, Ankit! <br/>
 
 
 ### Client Output
 
-client program started
-successfully connected to server
-Enter your chat name :
-Ankit
-Ankit : Hello, World!
-Amit : Hi, Ankit!
+client program started <br/>
+successfully connected to server <br/>
+Enter your chat name : <br/>
+Ankit <br/>
+Ankit : Hello, World! <br/>
+Amit : Hi, Ankit!<br/>
 
 
 ## Note
