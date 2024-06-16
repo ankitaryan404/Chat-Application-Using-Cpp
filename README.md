@@ -16,23 +16,23 @@ This project is a simple chat application demonstrating socket programming using
 - Microsoft Visual Studio or any other C++ compiler that supports WinSock
 - Basic knowledge of C++ and socket programming
 
-## Files
+## Files/Folders
 
-- `server.cpp`: The server application.
-- `client1.cpp`: The first client application.
-- `client2.cpp`: The second client application (identical to client1.cpp).
+- `Server/main.cpp`: The server application.
+- `Client_1/main.cpp`: The first client application.
+- `Client_2/main.cpp`: The second client application (identical to Client_1).
 
 ## How to Build and Run
 
 ### Server
 
-1. Open `server.cpp` in your C++ development environment.
+1. Open `Server/main.cpp` in your C++ development environment.
 2. Build the project.
 3. Run the compiled executable.
 
 ### Clients
 
-1. Open `client1.cpp` and `client2.cpp` in your C++ development environment.
+1. Open `Client_1/main.cpp` and `Client_2/main.cpp` in your C++ development environment.
 2. Build both projects.
 3. Run the compiled executables for each client.
 
@@ -66,17 +66,44 @@ This project is a simple chat application demonstrating socket programming using
 
 ### Server
 
-1. Compile and run `server.cpp`.
+1. Compile and run `Server/main.cpp`.
 2. The server will start listening on port `12345` for incoming client connections.
 3. The server console will display messages from clients and broadcast them to all connected clients.
 
 ### Clients
 
-1. Compile and run `client1.cpp` and `client2.cpp`.
+1. Compile and run `Client_1/main.cpp` and `Client_2/main.cpp`.
 2. Enter your chat name when prompted.
 3. Type messages and press Enter to send. Type `quit` to exit the chat.
 
 ## Example
 
 ### Server Output
+Server program
+Server has started listening on port : 12345
+client connected
+Message from client : Ankit: Hello, World!
+Message from client : Amit: Hi, Ankit!
+
+
+### Client Output
+
+client program started
+successfully connected to server
+Enter your chat name :
+Ankit
+Ankit : Hello, World!
+Amit : Hi, Ankit!
+
+
+## Note
+
+- The clients automatically disconnect from the server if the message "quit" is sent.
+- Make sure to run the server before starting the clients to ensure they can connect successfully.
+
+## Troubleshooting
+
+- If the server or client fails to start, ensure that the WinSock library is properly initialized.
+- Check for any firewall or network issues that might block the server or client from connecting.
+- Ensure that the server and clients are using the same port number (`12345`).
 
